@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Lizbeth Angulo" />
+
+
+<title>CUATROF - BARCELONA</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="FORMATO.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CUTT/events</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Quotation</a>
+</li>
+<li>
+  <a href="about.html">Credentials</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">CUATROF - BARCELONA</h1>
+<h4 class="author"><em>Lizbeth Angulo</em></h4>
+<h4 class="date"><em>15 al 21 de Octubre , 2020</em></h4>
+
+</div>
+
+
+<script> 
+    $(document).ready(function() { 
+    $head = $('#header'); 
+    $head.prepend('<A href = https://www.cuttingedge-events.com><img src ="CUTTLOGO.svg" width="150" vspace="50" align="right"></A>') 
+    }); 
+</script>
+<style>
+
+.precio{
+background-color:#828282;
+color: white;
+padding: 10px;
+border: 1px solid black;
+margin-left: 5px;
+border-radius: 5px;
+font-style: italic;
+}
+</style>
+<style>
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: #EA5933;
+}
+</style>
+<style>
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #EA5933;
+    font-weight: bold;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: white;
+    background-color: #EA5933;
+}
+
+</style>
+<div id="introduccon" class="section level1">
+<h1>Introduccón</h1>
+<p>Siguiendo su petición, a continuación le presentamos:</p>
+<ul>
+<li><p>Sugerencias de restaurantes situados cerca del mar, especializados en arroces y pescado.</p></li>
+<li><p>Restaurantes situados en el centro de la ciudad: tradicionales, de tapas y vanguardistas.</p></li>
+<li><p>Restaurantes especiales por su diseño o su localización.</p></li>
+<li><p>Una opción de cena más espectáculo flamenco.</p></li>
+<li><p>Actividades de medio dia que permiten conocer la ciudad y sus “imprescindibles”</p></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="mapa" class="section level1">
+<h1>Mapa</h1>
+<p>En este mapa se muestra la localización de los restaurantes que recomendamos y el punto de salida de algunas de las actividades: Bicicletas eléctricas y Segway</p>
+<iframe src="https://www.google.com/maps/d/embed?mid=1aRaYGBRiHan_TStAu0vc9PwjJPp5-bbS&amp;hl=es" width="100%" height="480">
+</iframe>
+</div>
+<div id="restaurantes-cerca-del-mar" class="section level1">
+<h1>Restaurantes Cerca del Mar</h1>
+<div id="cal-pinxo-palau-de-mar" class="section level2">
+<h2>Cal Pinxo Palau de Mar</h2>
+<iframe src="CalPinxo/CalPinxo.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto por entrantes a compartir, principal, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde:47,50€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+<div id="can-fisher" class="section level2">
+<h2>Can Fisher</h2>
+<iframe src="CanFisher/CanFisher.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico de tapas a compartir, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 54€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+<div id="tinglado" class="section level2">
+<h2>Tinglado</h2>
+<iframe src="Tinglao/Tinglao.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto por entrantes a compartir, principal, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde:44,50€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+<div id="cangrejo-loco" class="section level2">
+<h2>Cangrejo Loco</h2>
+<iframe src="CangrejoLoco/CangrejoLoco.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto por entrantes a compartir, principal, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 46,50€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+</div>
+<div id="restaurantes-situados-en-el-centro" class="section level1">
+<h1>Restaurantes situados en el centro</h1>
+<div id="alba-granados" class="section level2">
+<h2>Alba Granados</h2>
+<iframe src="Alba Granados/Alba Granados.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto por entrantes a compartir, principal, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde:50€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+<div id="el-glop-braseria" class="section level2">
+<h2>El Glop Braseria</h2>
+<iframe src="BraseriaElGlop/Glop.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto por entrantes a compartir, principal, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde:37.50€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+<div id="anita-flow" class="section level2">
+<h2>Anita Flow</h2>
+<iframe src="Anita Flow/AnitaFlow.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto por entrantes a compartir, principal, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde:44€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+</div>
+<div id="lonja-de-tapas" class="section level2">
+<h2>Lonja de Tapas</h2>
+<iframe src="Lonja de Tapas/LonjadeTapas.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico de tapas a compartir, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 38€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+</div>
+<div id="especiales-por-su-localizacion" class="section level1">
+<h1>Especiales por su localización</h1>
+<p></br></p>
+<div id="dos-torres" class="section level2">
+<h2>Dos Torres</h2>
+<iframe src="Dos Torres/DosTorres.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto por entrantes a compartir, principal, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde:52€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+<div id="can-travi-nou" class="section level2">
+<h2>Can Travi Nou</h2>
+<iframe src="Can Travi Nou/CanTravi.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto por 3 platos incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde:55€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+<div id="torre-dalta-mar" class="section level2">
+<h2>Torre d’Alta Mar</h2>
+<iframe src="Torre d'Alta Mar/Torre.html" frameborder="0" width="100%" height="1100" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto por 4 platos incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 96,50€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+</div>
+<div id="flamenco-en-barcelona" class="section level1">
+<h1>Flamenco en Barcelona</h1>
+<p>Recomendamos el Tablao que a nuestro criterio es el más auténtico de la ciudad <strong>El Tablao de Carmen</strong>.</p>
+<p>Está situado dentro del Pueblo Español. Es un museo al aire libre donde se han querido representar las diferentes culturas y arquitecturas de España.</p>
+<p>Por lo que podemos encontrar un típico barrio Sevillano de casas blancas y calles estrechas, en este barrio encontramos El Tablao de Carmen. Es un local mediano y reproduce fielmente la estructura de los tablaos tal y como eran tradicionalmente.</p>
+<p>Se puede cenar mientras se disfruta del escenario una cena tradicional acompañada por un buen vino o sangría.</p>
+<iframe width="100%" height="505" src="https://www.youtube.com/embed/jRM8A_MR_RM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p></br></p>
+<p>El Tablao ofrece dos horarios a elegir según disponibilidad:</p>
+<ul>
+<li>Primer pase: cena 18.00h y espectáculo a partir de las 18.45h</li>
+<li>Segundo pase: cena 20.30h y espectáculo a partir de las 21.15h</li>
+</ul>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico de tapas incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 65€ IVA inc -</li>
+<li>Menu compuesto de entrantes para compartir, plato principal, postre, bebidas y café, desde: 85€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><em>El precio del menú incluye el espectáculo y la entrada al Pueblo Español</em></p>
+<p></br> </br></p>
+</div>
+<div id="actividades-en-barcelona" class="section level1">
+<h1>Actividades en Barcelona</h1>
+<div id="city-tour-en-bicicleta-electrica" class="section level2">
+<h2>City tour en bicicleta eléctrica</h2>
+<p>Proponemos un tour en bicicleta eléctrica para conocer la ciudad, este tour es personalizable y tiene una duración aproximada de 3h.</p>
+<p>El grupo de 15 personas tendrá un guía que estará todo el tiempo con ellos explicándole las partes más importantes de la ciudad. También tendrán asistencia en caso de que alguien pinche o tenga un problema con la bici, poder solucionarlo en muy poco tiempo para poder continuar con el tour lo antes posible.</p>
+<p>Es posible empezar y terminar el tour en un punto personalizado que puede ser delante del hotel, por ejemplo y terminar en el restaurante de la cena…este servicio tiene un precio extra.</p>
+<p><img src = "bike1.jpg" width="100%"></p>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Tour de 3h por Barcelona incluyendo un guia cada 15 personas, casco y seguro, empezando y terminando en el local de alquiler: 40€ por persona IVA inc</p></li>
+<li>Traslado de las bicicletas para comenzar o terminar en un punto determinado por el cliente: 200€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="tour-guiado-en-segway" class="section level2">
+<h2>Tour guiado en Segway</h2>
+<p>Os proponemos una manera muy divertida de conocer la ciudad. Estos patinetes eléctricos son muy fáciles de conducir y se realiza un pequeño entrenamiento antes de comenzar el tour.</p>
+<p>El punto estandard para comenzar es el Arco del Triunfo, allí es donde se les dará a los invitados las primeras nociones y se les dividirá en grupos pequeños.</p>
+<p>Por ley en Barcelona los segways sólo pueden circular en grupos de 6 personas mas el guia, así que los dividiremos y irán un grupo detras del otro.</p>
+<p>Como en el tour en bicicleta eléctrica el punto de comienzo o de fin es personalizable, pero los segways tienen algunas restricciones, hay algunas zonas de la ciudad por las que no pueden circular.</p>
+<p><img src = "https://media-cdn.tripadvisor.com/media/photo-s/05/0b/80/09/barcelona-segway-tour.jpg" width="100%"></p>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Tour guiado de 2horas, incluyendo 1 guia cada 6/7 personas: 70€ IVA inc</p></li>
+<li>Transporte de los segways para comenzar o acabar en un punto determinado por el cliente: 200€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="gaudi-tour" class="section level2">
+<h2>Gaudí Tour</h2>
+<p><img src = "https://cdn.civitatis.com/espana/barcelona/galeria/la-pedrera-barcelona-fachada.jpg" width="100%"></p>
+<p>Nuestra guia oficial recogerá a los invitados en el hotel y con un minibus privado recorrerán la ciudad viendo las obras maestras del modernismo catalán, principalmente de <strong>Antonio Gaudí</strong> como son la Pedrera o la Casa Batlló, ambas situadas en el Paseo de Gracia.</p>
+<p>Durante el tour harán una parada en la Sagrada Familia, donde la guía explicará el significado de las diferentes fachadas y luego harán una visita al interior - la visita a este templo es considerada como uno de los imprescindibles a realizar al visitar la ciudad-</p>
+<p><img src = "https://images.adsttc.com/media/images/5cff/5ec5/284d/d16d/6a00/1111/medium_jpg/1.jpg?1560239805" width="100%"></p>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Guía oficial de Barcelona - 4h: 265€ IVA inc</p></li>
+<li><p>Bus de 18 plazas a disposición 4 horas para la visita: 270€ IVA inc</p></li>
+<li>Entrada básica de grupos a la Sagrada Familia (se tiene que comprar 3 meses antes): 25€ IVA inc por persona
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="fcb-tour" class="section level2">
+<h2>FCB Tour</h2>
+<p><img src = "https://as.com/futbol/imagenes/2019/05/09/primera/1557392347_052135_1557392561_noticia_normal.jpg" width="100%"></p>
+<p>La idea de este tour es combinar una visita guiada por la ciudad, visitando zonas de Montjuic como el estadio olímpico, plaza España y haciendo una parada para visitar el museo más visitado de la ciudad: El museo del Barça.</p>
+<p>La guia recogerá a los invitados en el hotel o el restaurante y recorrerán gran parte de la ciudad mientras les explica un poco la historia de la ciudad, su arquitectura, las costumbres…</p>
+<p>Una vez el bus pare en el Camp Nou los clientes entraran en el estadio donde podrán ver a parte del museo, zonas como los vestuarios, el banquillo, etc que normalmente no están accesibles al público.</p>
+<p><img src = "https://vesping.com/blog/wp-content/uploads/2018/09/camp-nou-experience-1600x1200.jpg" width="100%"></p>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Guía oficial de Barcelona - 4h: 265€ IVA inc</p></li>
+<li><p>Bus de 18 plazas a disposición 4 horas para la visita: 270€ IVA inc</p></li>
+<li>Entrada básica de grupos al Museo y al estadio Camp Nou: 35€ IVA inc por persona
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+</div>
+<div id="condiciones" class="section level1">
+<h1>Condiciones</h1>
+<ul>
+<li><p>Precios netos para CuatroF</p></li>
+<li><p>Los honorarios de Cutting Edge Events está incluido en los precios</p></li>
+<li><p>Todos los precios incluyen IVA</p></li>
+<li><p>No se ha realizado ninguna reserva. Una vez confirmado se comprobará la disponibilidad.</p></li>
+</ul>
+<p><br> <br></p>
+<div id="sorprendan-a-sus-clientes" class="section level2">
+<h2>Sorprendan a sus clientes!!</h2>
+<div class="client_offer">
+
+<p>
+<p>¿Les ha gustado nuestra presentación? La meta principal de <em><strong>CUTT/events</strong></em> es ayudarles a <strong>ganar</strong> este negocio. Seguramente ahora copiarían toda la información que contiene esta web y harían su propia presentación.<br></p>
+<p>
+Pero…¿porqué no utilizar nuestra tecnología y presentar esta propuesta a su cliente en nuestro formato? Ahora les ofrecemos, como un servicio <strong>totalmente gratuito</strong>, la posibilidad de poder sorprender a sus clientes con su novedosa propuesta.
+</p>
+<p>
+¿Cómo lo hacemos?:
+<ul>
+<ul>
+<li><p>Seguimos sus instrucciones para añadir cualquier cosa que quiran que esté incluida en su presentación y borrar cualquier otra información que consideren irrelevante.</p></li>
+<li><p>Incluimos el logo e información de su empresa y eliminamos todos nuestros datos.</p></li>
+<li><p>Podemos incluso cambiar algunos de los colores para que se asemeje más a su imagen corporativa.</p></li>
+<li>Una vez finalizada le enviaremos un nuevo link que no tendrá ninguna referencia a Cutting Edge Events para que puedan enviarlo a sus clientes como una presentación propia.
+</ul>
+</p>
+</div></li>
+</ul>
+<style>
+
+.client_offer{
+background-color: #ee7600;
+color: white;
+padding: 10px;
+border: 1px solid black;
+margin-left: 25px;
+border-radius: 5px;
+font-style: italic;
+}
+</style>
+<hr />
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

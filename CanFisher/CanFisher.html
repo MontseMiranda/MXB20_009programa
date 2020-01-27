@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+  <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+  <link rel="stylesheet" href="../fichas_style.css"></link>
+</head>
+
+<body>
+  <div class="activities" style="margin: auto; padding: 0px;">   
+    <h3>Can Fisher</h3>  
+                                                <!--insertar titulo-->
+    <p> El restaurante Can Fisher combina un cuidado diseño con una excelente gastronomía marinera en una ubicación privilegiada frente a la playa del Bogatell. Los arroces, mariscos y pescados son los grandes protagonistas de la carta, que se elabora con productos frescos de proximidad. Tanto desde su moderno comedor interior como desde su agradable terraza disfrutaremos de magníficas vistas al mar y de un ambiente inmejorable.</p>
+
+                     <!--insertar el texto-->
+    <hr>
+  </div>
+	<div class="container">
+    <div class="main-img">
+      <img src="1.jpg" id="current">
+    </div>
+
+    <div class="imgs">                                          <!--insertar las fotos-->
+      <img src="1.jpg">
+      <img src="2.jpg">
+      <img src="3.jpg">
+      <img src="4.jpg">
+    </div>
+  </div>
+  <hr>
+  
+  <section class="container">
+
+<div class ="one" style="float: left;
+    padding: 10px; background-color:  #F5F1E9">
+<p><i class="fa fa-map-o" style="margin-left: 20px;font-size:20px;color:#EA5933;"></i>   <!--insertar la info relevante a los iconos-->
+<span style="margin: 8px"><b>Situación:</b> Playa Bogatell</p></span>
+<p><i class="fa fa-cutlery" style="margin-left: 20px; font-size:20px;color:#EA5933;"></i> 
+<span style="margin: 10px"><b>Capacidad:</b> 80 max en una sala</p></span>
+<p><i class="fa fa-eur" style="margin-left: 20px;font-size:20px;color:#EA5933;"></i> 
+<span style="margin: 12px"><b>Precio</b> Medio - Alto</p></span>
+</div>
+
+<div class ="two" style="float: right width= 50%;
+    padding: 10px; background-color:  #F5F1E9 ">
+<p><i class="fa fa-handshake-o" style="margin-left: 100px; font-size:20px;color:#EA5933;"></i> 
+<span style="margin: 8px"><b>Estilo:</b> Cocina Tradicional</p></span>
+<p><i class="fa fa-apple" style="margin-left: 100px;font-size:20px;color:#EA5933;"></i> 
+<span style="margin: 12px"><b>Dietas especiales:</b> Disponibles</p></span>
+<p><i class="fa fa-wheelchair" style="margin-left: 100px;font-size:20px;color:#EA5933;"></i>   
+<span style="margin: 16px"><b>Adaptado:</b> Si</p></span>
+</div>
+</section>
+</div> 
+	<script>
+		const current = document.querySelector('#current');
+const imgs = document.querySelector('.imgs');
+const img = document.querySelectorAll('.imgs img');
+const opacity = 0.6;
+
+// Set first img opacity
+img[0].style.opacity = opacity;
+
+imgs.addEventListener('click', imgClick);
+
+function imgClick(e) {
+  // Reset the opacity
+  img.forEach(img => (img.style.opacity = 1));
+
+  // Change current image to src of clicked image
+  current.src = e.target.src;
+
+  // Add fade in class
+  current.classList.add('fade-in');
+
+  // Remove fade-in class after .5 seconds
+  setTimeout(() => current.classList.remove('fade-in'), 500);
+
+  // Change the opacity to opacity var
+  e.target.style.opacity = opacity;
+}
+
+	</script>
+</body>
+</html>
